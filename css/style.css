@@ -65,6 +65,7 @@ html, body{
 
 @media (min-width: 1400px) {  }
 
+/* about */
 .about {
     margin-top: 6%;
 }
@@ -82,4 +83,22 @@ html, body{
     width: 600px;
     padding: 20px;
     margin: 0 25px 0 25px;
+}
+
+/* usecase */
+.usecase {
+    margin-top: 6%;
+}
+
+.usecase span {
+    color: #DF4551;
+    font-weight: 600;
+}
+
+.usecase .card {
+    background-color: #FFDFAA;
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+    border: #FFDFAA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -35,6 +35,10 @@ html, body{
     background-color: #F6F6F6;
 }
 
+.bg-card{
+    color:  #FFDFAA;
+}
+
 .container .d-flex button {
     color: #F6F6F6;
     border: #F6F6F6;

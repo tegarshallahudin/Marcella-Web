@@ -15,6 +15,10 @@ html, body{
     --color-primary: #0083CA;
     --color-secondary: #FBD28E;
 }
+.btn-primary{
+    background-color:  var(--color-primary);
+    padding: 15px 40px;
+}
 .btn-outline-primary{
     padding: 15px 20px;
     border: 2px solid var(--color-primary);
@@ -29,7 +33,8 @@ strong{
 }
 hr{
     width: 25%;
-    max-width: 50px;
+    width: 50px;
+    max-width: 225px;
     display: block; 
     height: 1px;
     border: 0; 
@@ -140,6 +145,15 @@ p{
     background-color: #F6F6F6;
     height: max-content;
 }
+.section__contact .section__header{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #535251;
+}
+.section__contact .form__contact input{
+    padding: 15px;
+}
 /* end section contact */
 
 /* start section fitur */
@@ -157,6 +171,15 @@ p{
     border: none;
 }
 /* end section fitur */
+/* start section detail */
+.section__detail{
+    padding: 50px;
+}
+
+.section__detail a{
+    color: var(--color-primary);
+}
+/* end section detail */
 /* start section footer */
 .section__footer .section__footer__heading{
     padding: 50px;

@@ -72,7 +72,6 @@ p{
 .hero-container h3{
     font-size: 20px;
     color: #8A8A8A;
-    margin-bottom: 20px;
 }
 .hero-container .bg__img{
     max-width: 100%;
@@ -108,7 +107,12 @@ p{
 /* start section about */
 .section__about{
     width: 100%;
-    height: max-content;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 .section__about .section__header h1{
     font-size: 30px;
@@ -122,7 +126,7 @@ p{
     width: 40%;
     top: 50px;
     right:0px;
-    bottom: -40px;
+    bottom: -100px;
     left: 1px;
     z-index: -1;
    
@@ -132,6 +136,7 @@ p{
 /* start section use case/ */
 .section__usecase{
     height: max-content;
+    margin-bottom: 150px;
 }
 .section__usecase .card{
     background-color: var(--color-primary);
@@ -213,7 +218,7 @@ p{
 /* start section footer */
 .section__footer .section__footer__heading{
     padding: 50px;
-    background-color: #535251;
+    background-color: #0F3460;
 }
 .section__footer .section__footer__heading h4{
     font-size: 18px;
@@ -221,12 +226,16 @@ p{
 }
 .section__footer .section__footer__copyright{
     padding: 20px;
-    background-color: #35322F;
+    background-color: #16213E;
+}
+.section__footer .section__footer__heading p{
+    color: #B1B1B1;
 }
 .section__footer .section__footer__copyright p{
     line-height: normal;
     margin: 0;
     font-size: 16px;
+    color: #737373 !important;
 }
 /* end section footer */
 @media (max-width: 980px) { 

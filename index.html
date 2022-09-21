@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
 </head>
 <body>
     <!-- navbar -->
@@ -31,13 +33,13 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Sercive</a>
+                        <a class="nav-link" href="#usecase">Use Case</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="detail.html">Feature</a>
+                        <a class="nav-link" href="#featured">Feature</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -52,23 +54,25 @@
     <!-- end-navbar -->
 
     <!-- content banner-->
-    <section class="hero-container">
+    <section class="hero-container py-5">
         <div class="" id="particles-js">
             <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1903" height="683"></canvas>
         </div>
         <div class="container">
             <div class="row justify-content-center ">
-                <div class="col-md-6 text-center" id="hero__container__bg" >
-                    <img src="img/bg-banner.png" alt="" class=" bg__img mb-4">
+                <div class="col-md-6 text-center" id="hero__container__bg">
+                    <div data-aos="fade-up" data-aos-delay="250">
+                        <img src="img/bg-banner.png" alt="" class=" bg__img mb-4">
+                    </div>
                     <div class="header-content" >
                         <!-- <span class="badge bg-secondary px-3 py-2">MARCELLA</span> -->
                         <h1 class="fw-bold mt-4">
-                            <span   style="color: #0083CA;">Start</span> Monitoring
+                            <span style="color: #0083CA;" id="typed"></span> Monitoring
                         </h1>
                         <h3 class=" mt-1" >
                             Cyber Patrol & Product Inteligent
                         </h3>
-                        <a href="#about" class="btn btn-primary btn-lg mt-2">
+                        <a href="#about" class="btn btn-primary btn-lg mt-5">
                             Get Started
                         </a>
                     </div>
@@ -80,9 +84,9 @@
     <!-- endcontent banner-->
 
     <!-- about -->
-    <section class="section__about my-5 p-5" id="about" data-aos="fade-up">
+    <section class="section__about py-5" id="about" data-aos="fade-up">
         <div class="container">
-            <div class="row justify-content-center  position-relative" >
+            <div class="row justify-content-center position-relative" >
                 <div class="col-lg-5 col-md-12 col-xs-12 ">
                         <img src="img/bg-about.jpg" alt="" class="img-fluid shadow-sm">
                         
@@ -101,7 +105,7 @@
     <!-- endabout -->
 
     <!-- start usecase -->
-    <section class="section__usecase">
+    <section class="section__usecase py-4" id="usecase">
         <div class="container">
             <span>use case</span>
             <hr>
@@ -170,7 +174,7 @@
     <!-- endusecase -->
 
     <!-- start section Feature-->
-    <section class="section__feature my-5" data-aos="fade-up" data-aos-duration="2000">
+    <section class="section__feature my-5" id="featured" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="section__header text-center">
                 <span>Keunggulan Marcella</span>
@@ -231,10 +235,10 @@
     <!-- end section Feature-->
 
     <!-- start section contact -->
-    <section class="section__contact my-5">
+    <section class="section__contact my-5" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 mx-auto" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                <div class="col-lg-6 mx-auto" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <div class="section__header text-center">
                         <h1>Apakah anda ingin mendapatkan manfaatnya ?</h1>
                     </div>
@@ -332,7 +336,9 @@
         </div>
     </section>
     <!-- end section fitur -->
-
+    <div class="container-fluid d-flex justify-content-end fixed-bottom p-4 whatsapp" data-aos="fade-up" data-aos-delay="250">
+        <button onclick="topFunction()" class="btn btn-secondary py-2"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
     <footer class="section__footer">
         <div class="section__footer__heading">
             <div class="container">
@@ -358,8 +364,8 @@
         </div>
         <div class="section__footer__copyright">
             <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div>
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
                         <p class="text-white">@copyright by datains</p>
                     </div>
                     <!-- <div class="d-flex flex-row">
@@ -370,6 +376,7 @@
             </div>
         </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/js/particles.js"></script>
@@ -378,7 +385,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+    <script>
+        new Typed('#typed',{
+            strings : ['Start', 'Marcella'],
+            typeSpeed : 250,
+            delaySpeed : 250,
+            loop : true
+        });
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
    
 </body>
 </html>

@@ -14,6 +14,11 @@ html, body{
 :root{
     --color-primary: #0083CA;
     --color-secondary: #FBD28E;
+    --color-secodanry-red: #DF4551
+}
+.bg-secondary{
+    background-color: #0083ca65 !important;
+    color: var(--color-primary);
 }
 .btn-primary{
     background-color:  var(--color-primary);
@@ -22,6 +27,9 @@ html, body{
 .btn-outline-primary{
     padding: 15px 20px;
     border: 2px solid var(--color-primary);
+}
+.btn-outline-primary a:hover{
+    color: red;
 }
 span{
     color: var(--color-primary);
@@ -55,10 +63,31 @@ p{
 }
 
 .hero-container {
-    height: max-content;
+    /* display: flex; */
+    position: relative;
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 100vh;
 }
+.hero-container h3{
+    font-size: 20px;
+    color: #8A8A8A;
+    margin-bottom: 20px;
+}
+.hero-container .bg__img{
+    max-width: 100%;
+    z-index: 10;
+    width: 600px;
+}
+.hero-container #hero__container__bg {
+    position: absolute;
+    top: 45%; right: 50%;
+    transform: translate(50%,-50%);
+}
+/* .hero-container . */
 .hero-container h1{
-    font-size: 40px;
+    font-size: 64px;
+    margin-bottom: 10px;
 }
  
 .hero-container button {
@@ -136,6 +165,7 @@ p{
     color: #535251;
     font-size: 18px;
     font-weight: 400px;
+    line-height: 2rem;
 }
 /* end section feature */
 
